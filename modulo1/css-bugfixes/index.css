@@ -135,6 +135,12 @@ td button:active{
     
 }
 
+#caixa{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
 #back-button:hover {
     background-color: #635a3d
 }
