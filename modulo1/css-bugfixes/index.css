@@ -51,8 +51,10 @@ div img {
 }
 
 .container {
+    padding-top: 200px;
+    padding-bottom: 0px;
     height: 500px;
-    text-align: center;
+    text-align:cente;
 }
 
 .icone {
@@ -123,6 +125,7 @@ td button {
     border-radius: 5px;
     font-size: 10px;
     color: black;
+    
 }
 
 #back-button:hover {
