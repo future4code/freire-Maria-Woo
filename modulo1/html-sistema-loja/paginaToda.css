@@ -1,0 +1,23 @@
+.headerIndex{
+    border: 1px solid black;
+    margin: 0 16px;
+    background-color: rgb(36, 78, 102);
+    padding: 16px 32px 16px 32px ;
+    font-size: 30px;
+    color: rgb(186, 190, 189);
+    font-style: initial;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#TextoHeader{
+    background-color: lightcoral;
+    font-size: 21px;
+}
+
+#footer{
+    border: 20px solid rgb(36, 78, 102);
+    background-color: rgb(37, 87, 138);
+    margin: 0 16px;
+    color: rgb(186, 190, 189);
+    
+}
