@@ -3,56 +3,66 @@
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    background-color: white;
-    /*background-attachment: fixed;
-    width: 400px;
-    height: 300px;*/
-       
+    background-color: white;       
 }
-
-/*h1 {
-    
-    padding-left:60px;
-    color: rgb(165, 34, 34);
-    text-align: left;
-    font-size: 50px;
-    margin-top: px
-}*/
-.imagem1{
-    width: 80px;
-    height: 80px;
+main{
+    margin-top: 200px;
+}
+.marcador{
+    width: 60px;
+    height: 60px;
     padding-left: 40px;    
 }
-.imagem2{
-  /*  display: block;*/
-    width: 80px;
-    height: 80px;
-    padding-left: 40px;
+h1{
+    display: inline-block; 
+    color:#423737;
+    font-size: 37px;
+    margin-top: 70px;
+    text-align: justify;
+    /*verificar a necessidade de inline*/
 }
 
-h1{
-    display: inline-block;
-    color:#423737;
-    position: relative;
-    font-weight: 20x;
-    font-size: 40px;
-    margin-top: 100px;
-    text-align: right;
-   
+header{
+    position:fixed;
+    top: 0px;
+    width: 100%;
+    padding: 30px;
+    /*background: url(../img/download.jpeg);*/
+    background-color: #b96a49;
     
 }
-.formacao{
-    display: inline;
-    color:#423737;
-    position: relative;
-    font-weight: 20x;
-    font-size: 40px;
-    margin-top: 100px;
-    text-align: right;
-    padding-left:;
+footer{
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    background-color: #b96a49
 }
-p {
-    margin-top:50px;
+.menu {
+    background: url(../img/folhas.jpg);
+    background-size: 100px;
+    width: 100px;
+    height: 80px;
+    border-color: black;
+    font-size: 18px;
+    color: black;
+    
+}
+
+
+
+/* HOME*/
+#maria{
+    
+    max-width:300px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+    border-radius: 800px;
+    margin-left: 40%
+}
+
+.resumo{
+    margin-top:40px;
     padding-right: 50px;
     padding-left: 50px;
     text-align: center;
@@ -60,71 +70,39 @@ p {
     font-family: monospace;
 } 
 
-h2 {
-    /*padding: 0px 0px 0px 60px;
-    color: rgb(165, 34, 34);
-    text-align: left;
-    font-weight: 20x;
-    font-size: 40px;*/
-    color: #423737;
-    padding-left: 50px;
-    position: relative;
-    font-weight: 20x;
-    font-size: 40px;
-    margin-top: 100px;
-    text-align: left;
-}
+.subtitulo{
+    color:#405743;
+    font-weight: 0px; /*verificar*/
+    font-size: 30px;
+    padding-top: 13px;
+    padding-left: 130px;
 
-
-header,footer{
-    /*position: fixed;
-    top:40;
-    line-height:0;
-    width:0;
-    height:0;
-    border-style: solid;
-    border-color: #b96a49 ;
-    border-width: 0px 160px 90px 1170px;
-    margin: auto;*/
-    text-align: center;
-    padding: 30px;
-    width: 100%;
-    /*background: url(../img/download.jpeg);*/
-    background-color: #b96a49
-}
-
-.botao-projeto-loja {
-    background-color: #ffaf43;
-    background: url(../img/folhas.jpg);
-    background-size: 150px;
-    width: 100px;
-    height: 100px;
-    margin-left: 500px;
-    margin-top: 40px;
-    /*border-radius: 0px; permite que fique em formato de círculo*/
-    border-color: black;
-    font-size: 20px;
-    color: black;
     
 }
-.botao-projeto-blackjack {
-    background-color: #ffaf43;
-    background: url(../img/folhas.jpg);
-    background-size: 150px;
-    width: 100px;
-    height: 100px;
-    margin-left: 50px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    border-color: black;
-    font-size: 20px;
-    color: black;
-    
+ul{
+    padding-top: 10px;
+    padding-left: 170px;
+    padding-bottom: 15px;
+    font-style: italic;
+    font-size: 17px;
+    text-align: justify;
 }
 
-
-/* HOME*/
-
+.projetos{
+    width: 40%;
+    margin-left: 10% 
+}
+.projetos:hover{
+   background-color : #b96a49;
+}
+.redes{
+    width: 80px;
+    height: 80px;
+    border-radius: 60px;
+    /*background-size: 18px;*/
+   /* background-color:black ;*/
+    /*border-color:rgb(248, 248, 248); tentativa de colocar cor na borda*/
+}
 
 /* PROJ1*/
 
@@ -135,5 +113,34 @@ header,footer{
 
 
 /* FORMCONTATO*/
+.formulario{
+    margin-top: 200px;
+    padding-left: 100px;
+}
+.caixa{
+    width: 400px;
+}
+#conteudo{
+    margin-left: 100px;
+    height: 100px;
+    width: 500px;
+    text-align: justify;
+}
+#enviar{
+    margin-left: 500px;
+    height: 40px;
+    width: 70px;
+    background-color: #405743;
+    color: white;
+    border-radius: 5px;
+    margin-bottom:20% ;
+}
+#enviar:hover{
+    background-color: #b96a49;
+}
 
+#enviar:active{
+    color: black;
+    background-color: white;
+}
 
