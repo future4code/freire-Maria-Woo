@@ -31,6 +31,9 @@ header{
     background-color: #b96a49;
     
 }
+.menu:hover{
+    background-color: blanchedalmond;
+}
 footer{
     text-align: center;
     padding: 30px;
@@ -92,16 +95,11 @@ ul{
     width: 40%;
     margin-left: 10% 
 }
-.projetos:hover{
-   background-color : #b96a49;
-}
+
 .redes{
     width: 80px;
     height: 80px;
     border-radius: 60px;
-    /*background-size: 18px;*/
-   /* background-color:black ;*/
-    /*border-color:rgb(248, 248, 248); tentativa de colocar cor na borda*/
 }
 
 /* PROJ1*/
