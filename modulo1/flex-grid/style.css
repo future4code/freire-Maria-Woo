@@ -1,0 +1,81 @@
+* {
+   padding: 0;
+   margin: 0; 
+   box-sizing: border-box;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
+
+
+header {
+    background-color: mediumvioletred;
+    /* height: 80px; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 0 25px;
+}
+
+/* EXERCICIO 2 */
+
+nav {
+    background-color: #f2d0e0;
+    flex-grow: 3;
+}
+main {
+    flex-grow: 1;
+}
+
+
+.container {
+    display: flex;
+    /* height: 80vh; */
+}
+
+/* EXERCÍCIO 3 */
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* PRECISA TER ALTURA PRO FLEX GROW FUNCIONAR NA VERTICAL */
+    height: 90vh;
+}
+
+footer {
+    background-color: mediumvioletred;
+    flex-grow: 1;
+}
+header {
+    flex-grow: 1;
+}
+.container {
+    flex-grow: 40;
+}
+
+/* EXERCICIO 4 */
+main > div {
+    background-color: blue;
+    margin: 20px;
+    height: 30%;
+    width: 20%;
+    align-items: flex-start;
+  
+}
+
+.bolo{
+    display: flex;
+    flex: auto;
+    max-width:80%;
+    max-height:80%;
+   
+
+}
+.container > main {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    justify-content: center;
+   
+}
