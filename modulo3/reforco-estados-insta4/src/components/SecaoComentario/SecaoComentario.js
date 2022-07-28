@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component, useState} from 'react'
 import styled from 'styled-components'
 
 const CommentContainer = styled.div`
@@ -13,17 +13,17 @@ const InputComentario = styled.input`
 `
 
 export function SecaoComentario (props) {
-	
+	const [inputValue, setInputValue] = useState ('');
 
-	const onChangeComentario = () => {
-
+	const onChangeComentario = (event) => {
+		setInputValue(event.target.value);
 	}
-
+		
 	
 		return <CommentContainer>
 			<InputComentario
 				placeholder={'Comentário'}
-				value={''}
+				value={inputValue}
 				onChange={onChangeComentario}
 			/>
 			<button onClick={props.aoEnviar}>Enviar</button>

@@ -39,14 +39,16 @@ const PostPhoto = styled.img`
 `;
 
 function Post(props) {
-  const [curtido, setCurtido] = useState(false);
+  const [curtido, setCurtido] = useState(false); //a cor do coração
   const [numeroCurtidas, setNumeroCurtidas] = useState(0);
   const [comentando, setComentando] = useState(false);
   const [numeroComentarios, setNumeroComentarios] = useState(0);
 
   const onClickCurtida = () => {
-    console.log("Curtiu!");
+    setCurtido(!curtido);
+    setNumeroCurtidas(numeroCurtidas + (!curtido? 1 : -1));
   };
+ 
 
   const onClickComentario = () => {
     setComentando(!comentando);
@@ -54,16 +56,19 @@ function Post(props) {
 
   const aoEnviarComentario = () => {
     setComentando(false);
-    setNumeroComentarios(numeroComentarios + 1);
+    setNumeroComentarios(numeroComentarios + 1)
+    alert ("comentado!")
   };
 
-  let iconeCurtida;
+  // let iconeCurtida;
 
-  if (curtido) {
-    iconeCurtida = iconeCoracaoPreto;
-  } else {
-    iconeCurtida = iconeCoracaoBranco;
-  }
+  // if (curtido) {
+  //   iconeCurtida = iconeCoracaoPreto;
+  // } else {
+  //   iconeCurtida = iconeCoracaoBranco;
+  // }
+  const iconeCurtida = curtido ? iconeCoracaoPreto : iconeCoracaoBranco;
+
 
   let componenteComentario;
 
